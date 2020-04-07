@@ -1,0 +1,1614 @@
+@font-face {
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../assets/fonts/TitilliumWeb-Regular.ttf);
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  
+  @font-face {
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: 600;
+    src: url(../assets/fonts/TitilliumWeb-SemiBold.ttf);
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  
+  
+  @font-face {
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: 700;
+    src: url(../assets/fonts/TitilliumWeb-Bold.ttf);
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  
+  @font-face {
+    font-family: 'Minion Pro';
+    font-style: normal;
+    font-weight: 700;
+    src: url(../assets/fonts/MinionPro-Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: 'Malaga';
+    font-style: italic;
+    font-weight: 700;
+    src: url(../assets/fonts/Malaga\ OT\ Reg\ Italic.otf);
+  }
+
+body {
+    width: 100%;
+}
+.common {
+    width: 1800px;
+    margin: 0 auto;
+}
+
+/*//////////////////////////////////////// - HEADER - ///////////////////////////*/
+
+.header-wrapp {
+    background: url(../assets/img/backgroundd.jpg) no-repeat center;
+}
+
+.header {
+    background: url(../assets/img/aurora.png) no-repeat left 582px bottom 218px;
+    padding: 65px 200px 237px;
+    display: flex;  
+    flex-direction: column; 
+}
+
+/* ------------------------ left-sidebar ------------------------ */
+
+.header-navigation {
+    display: flex; 
+}
+
+.left-sidebar {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.neutron {
+    font-size: 30px;
+    letter-spacing: 0px;
+    line-height: 14px;
+    color: #858688;
+    font-family: "Titillium Web";
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.neutron ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 16px 0 0;
+}
+
+.mail {
+    font-size: 30px;
+    letter-spacing: 0px;
+    line-height: 14px;
+    color: #5b4295;
+    font-family: "Titillium Web";
+    font-weight: 700;
+    text-decoration: none;
+    margin: 0;
+}
+
+.language-media {
+    display: none;
+}
+
+.language ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 32px;
+}  
+
+.language li {
+    display: inline;
+}
+
+.language li a {    
+    font-size: 14px;
+    letter-spacing: 0px;
+    color: #959595;
+    font-family: "Titillium Web";
+    font-weight: 400; 
+    text-decoration: none;
+}
+
+.language li span {
+    font-size: 14px;
+    letter-spacing: 0px;
+    line-height: 56px;
+    color: #959595;
+    font-family: "Titillium Web";
+    font-weight: 400;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.language li a:hover {
+    color: #959595;
+    font-weight: 900;
+    border-bottom: 2px solid #959595;
+}
+
+.left-sidebar a:hover {
+    text-decoration: none;
+}
+.left-sidebar a span:hover {
+    text-decoration: none;
+}
+
+/* ------------------------ left-sidebar ------------------------ */
+
+/* ------------------------ right-sidebar ----------------------- */
+
+.right-sidebar {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+nav .menu {
+    padding: 0;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0 0 0 28px;
+    margin-top: 14px;
+} 
+
+.menu li {
+    display: inline;
+    padding-right: 25px;
+}
+
+.menu li a {
+    font-size: 16px;
+    letter-spacing: 0px;
+    color: #454545;
+    font-family: "Titillium Web";
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.menu-media {
+    padding: 0;
+    display: none;
+}
+
+.menu-media ul {
+    list-style-type: none;
+    padding: 0 0 0 28px;
+    margin-top: 14px;
+} 
+
+.menu-media li {
+    display: inline;
+    padding-right: 25px;
+}
+
+.menu-media li a {
+    font-size: 16px;
+    letter-spacing: 0px;
+    color: #454545;
+    font-family: "Titillium Web";
+    font-weight: 400;
+    text-decoration: none;
+}
+
+nav .login {
+    padding: 0;
+}
+
+.login ul {
+    list-style-type: none;
+    padding-left: 50px;
+    margin-top: 14px;
+} 
+
+.login li {
+    display: inline;
+}
+
+.login li:nth-child(2) {
+    padding-left: 21px;
+}
+
+.login li a {
+    font-size: 16px;
+    letter-spacing: 0px;
+    font-family: "Titillium Web";
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.login ul li:nth-child(2) a {
+    color: #ffffff;
+    padding: 9px 15px; 
+    border-radius: 20px;
+    box-shadow: -1px 7px 12px rgba(142, 194, 222, 1);
+    background: -webkit-gradient(linear, left top, left bottom, from(#582c7e), to(#6276cd)); /* для Webkit браузеров */
+	background: -moz-linear-gradient(to bottom right, #582c7e, #5a3b8e, #616bc0, #6276cd); /* для Firefox */
+    background-image: -o-linear-gradient(top,  #582c7e,  #8659ad); /* для Opera 11 */
+}
+/* ------------------------ right-sidebar ----------------------- */
+
+/* ------------------------ create-account-block ---------------- */
+
+.create-account-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.icons {
+    font-size: 21px;
+}
+
+#gplus {
+    position: absolute;   
+    left: 110%;
+    top: 35%;
+}
+
+#facebook {
+    position: absolute;   
+    left: 110%;
+    top: 45%;
+}
+
+#twitter {
+    position: absolute;   
+    left: 110%;
+    top: 56%;
+}
+
+.create-account-block h1, h3 {
+    width: 1400px;
+    font-size: 60px;
+    letter-spacing: 1px;
+    color: #454545;
+    font-family: "Titillium Web";
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+    padding: 96px 0 0;
+}
+
+.create-account-block h3 {
+    color: #454545;
+    font-weight: 300;
+    font-size: 30px;
+    padding: 0 0 66px;
+}
+
+.buttons {
+    display: flex;
+}
+
+.buttons a {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#create {
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    color: #ffffff;
+    padding: 17px 60px;
+    margin-right: 0px;
+    border-radius: 30px;
+    box-shadow: 0px 7px 12px rgba(122, 144, 203, 1);
+    background: -webkit-gradient(linear, left top, left bottom, from(#582c7e), to(#6276cd)); /* для Webkit браузеров */
+	background: -moz-linear-gradient(to bottom right, #582c7e, #5a3b8e, #616bc0, #6276cd); /* для Firefox */
+    background-image: -o-linear-gradient(top,  #582c7e,  #8659ad); /* для Opera 11 */
+}
+
+#bt-apple {
+    font-size: 22px;
+    text-decoration: none;
+    text-align: center;
+    color: #ffffff;
+    padding: 17px 17px;
+    height: 14px;
+    margin-top: 6px;
+    margin-left: 26px;
+    border-radius: 35px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#582c7e), to(#6276cd)); /* для Webkit браузеров */
+	background: -moz-linear-gradient(to bottom right, #582c7e, #5a3b8e, #616bc0, #6276cd); /* для Firefox */
+    background-image: -o-linear-gradient(top,  #582c7e,  #8659ad); /* для Opera 11 */
+}
+
+#bt-google-play {
+    font-size: 17px;
+    text-decoration: none;
+    text-align: center;
+    color: #ffffff;
+    padding: 17px 17px;
+    height: 14px;
+    margin-top: 6px;
+    margin-left: 18px;
+    margin-right: 21px;
+    border-radius: 35px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#582c7e), to(#6276cd)); /* для Webkit браузеров */
+	background: -moz-linear-gradient(to bottom right, #582c7e, #5a3b8e, #616bc0, #6276cd); /* для Firefox */
+    background-image: -o-linear-gradient(top,  #582c7e,  #8659ad); /* для Opera 11 */
+}
+
+/* ------------------------ create-account-block ---------------- */
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ - HEADER - \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+/*//////////////////////////////////////// - SECTION-ABOUT-SECURITY - ////////////////////////////////////////*/
+
+/* --------------------------- security -------------------------- */
+
+.security {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ------------------------ left-section ---------------- */
+
+.wrapp-left-section {
+    display: flex;
+    flex-direction: column;
+    width: 63%;
+}
+
+.left-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.swiss {
+    width: 62%;
+    padding: 98px 0;    
+    display: flex;
+    justify-content: flex-end;
+}
+
+.swiss-text {
+    width: 54%;
+    display: flex;
+    flex-direction: column;
+}
+
+.swiss-text-h {
+    background: url(../assets/img/swiss.png) no-repeat left -15px top 13px ;
+    display: flex;
+    flex-direction: column;
+    padding-left: 55px;
+    padding-bottom: 10px;
+}
+
+.swiss-text-h h1, p {
+    font-size: 30px;
+    letter-spacing: 0px;
+    line-height: 37px;
+    color: #555555;
+    font-family: "Titillium Web";
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.swiss-text-h p {
+    color: #959393;
+    margin: 0;
+    font-size: 20px;
+    line-height: 14px;
+}
+
+.description {
+    font-size: 15px;
+    letter-spacing: 0px;
+    line-height: 22px;
+    color: #959393;
+    font-family: "Titillium Web";
+    font-weight: 400;
+    padding-top: 10px;
+}
+
+.wrapp-line {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.vertical-line {
+    width: 1px;
+    background-color: #959393;
+    height: 200px;
+}
+
+.double {
+    width: 36%;
+    padding: 98px 0;    
+    display: flex;
+    justify-content: flex-end;
+}
+
+.double-text {
+    width: 93%;
+    display: flex;
+    flex-direction: column;
+}
+
+.double-text-h {
+    background: url(../assets/img/double.png) no-repeat left -23px top 3px ;
+    display: flex;
+    flex-direction: column;
+    padding-left: 63px;
+    padding-bottom: 10px;
+}
+
+.double-text-h h1, p {
+    font-size: 30px;
+    letter-spacing: 0px;
+    line-height: 37px;
+    color: #555555;
+    font-family: "Titillium Web";
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.double-text-h p {
+    color: #959393;
+    margin: 0;
+    font-size: 20px;
+    line-height: 14px;
+}
+
+.double .description {
+    padding-left: 4px;
+}
+
+.left-section-bottom {
+    display: flex;
+    justify-content: flex-end;  
+}
+
+.left-section-bottom h1 {
+    font-size: 60px;
+    letter-spacing: 1px;
+    line-height: 22px;
+    color: #535353;
+    font-family: "Titillium Web";
+    font-weight: 400;
+    padding-top: 3px;
+    padding-right: 27px;
+    margin-bottom: 0;
+    padding-bottom: 11px;
+}
+
+.left-section-bottom p {
+    font-size: 24px;
+    letter-spacing: 0px;
+    line-height: 22px;
+    color: #959393;
+    font-family: "Titillium Web";
+    font-weight: 400;
+    width: 654px;
+}
+
+.left-section-bottom p span {
+    color: #f65151;
+}
+
+/* ------------------------ left-section ---------------- */
+
+.vertical-line2 {
+    width: 1px;
+    background-color: #959393;
+    height: 434px;
+    margin-right: 12px;
+    margin-top: 123px;
+}
+
+/* ------------------------ right-section ---------------- */
+
+.right-section {
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#media-right-section-670 {
+    display: none;
+}
+
+.email {
+    width: 59%;
+    padding: 98px 0;    
+    display: flex;
+    justify-content: flex-end;
+}
+
+.email-text {
+    width: 93%;
+    display: flex;
+    flex-direction: column;
+}
+
+.email-text-h {
+    background: url(../assets/img/key.png) no-repeat left -15px top 15px ;
+    display: flex;
+    flex-direction: column;
+    padding-left: 60px;
+    padding-bottom: 10px;
+}
+
+.email-text-h h1, p {
+    font-size: 30px;
+    letter-spacing: 0px;
+    line-height: 37px;
+    color: #555555;
+    font-family: "Titillium Web";
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.email-text-h p {
+    color: #959393;
+    margin: 0;
+    font-size: 20px;
+    line-height: 14px;
+}
+
+.horizontal-line {
+    width: 191px;
+    background-color: #959393;
+    height: 1px;
+    margin-top: 121px;
+}
+
+/* ------------------------ right-section ---------------- */
+
+/* --------------------------- security -------------------------- */
+
+.security-footer {
+    display: flex;
+    align-items: center;
+}
+
+.bottom-line {
+    width: 54%;
+    height: 1px;
+    background-color: #bfbfbf;
+}
+
+.learn-about {    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 334px;
+    height: 59px;
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 22px;
+    color: #676767;
+    font-family: "Titillium Web";
+    font-weight: 400;
+    text-align: center;
+    border-radius: 31px;
+    background-color: #ffffff;
+    border: 1px solid #b9b9b9;
+}
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ - SECTION-ABOUT-SECURITY - \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+/* /////////////////////////////////////// - JOURNALS - /////////////////////////////////////// */
+
+.journals {
+    padding: 39px 0 0 22px;
+}
+
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ - JOURNALS - \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+/* ////////////////////////////////////// - PURCHASE-AND-SUPPORT - ////////////////////////////////////// */
+
+.wrapp-purchase-and-support {
+    padding-bottom: 80px;
+}
+
+.purchase {
+    background: url(../assets/img/units.png) no-repeat right 269px bottom -10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+    padding-bottom: 165px;
+}
+
+.herald-words {
+    background: url(../assets/img/ellipses.png) no-repeat left 4px top 3px;
+    width: 541px;
+    font-size: 24px;
+    letter-spacing: 0px;
+    line-height: 31px;
+    color: #101010;
+    font-family: "Malaga OT CE";
+    font-style: italic;
+    padding-left: 44px;
+    margin: 3% 0 0px 20%;
+}
+
+.boston-herald {
+    font-size: 17px;
+    letter-spacing: 0px;
+    line-height: 31px;
+    color: #727272;
+    font-family: "Malaga OT CE";
+    font-style: italic;
+    padding: 0 0 0 398px;
+    width: 133px;
+    margin-top: 7px;
+}
+
+.base-block {
+    display: flex;
+    justify-content: center;
+    margin-top: 95px;
+}
+
+.stores {
+    display: flex;
+    flex-direction: column;
+    width: 461px;
+}
+
+.stores h1 {
+    font-size: 36px;
+    letter-spacing: 0px;
+    line-height: 22px;
+    color: #535353;
+    font-family: "Titillium Web";
+    font-weight: 400;
+    text-align: right;
+    padding-right: 24px;
+    margin-top: 17px;
+}
+
+.stores p {
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 22px;
+    color: #959393;
+    font-family: "Titillium Web";
+    font-weight: 400;
+    text-align: right;
+    display: inline-block;
+    margin: 0;
+    padding-right: 24px;
+}
+
+.links {
+    padding: 32px 0 0 65px;
+}
+
+.links a {
+    padding-right: 9px;
+}
+
+.wrapp-purchase-line {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.purchase-line {
+    width: 1400px;
+    height: 1px;
+    background-color: #b9b9b9;
+    position: relative;
+    z-index: 1;
+    margin-top: -7px;
+}
+
+.about-support {
+    align-items: center;
+    padding: 46px 0 40px;
+}
+
+.about-support h1, p {
+    font-size: 38px;
+    text-align: center;
+    letter-spacing: 0px;
+    line-height: 30px;
+    color: #535353;
+    font-family: "Titillium Web";
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.about-support p {
+    color: #7c7c7c;
+    font-size: 31px;
+    margin-top: 9px;
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+}
+
+.btns a {
+    margin-left: -7px;
+}
+
+#cloud {
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    color: #ffffff;
+    padding: 17px 18px;
+    margin-left: 7px;
+    border-radius: 30px;
+    box-shadow: 0px 7px 12px rgba(99, 98, 140, 1);
+    background: -webkit-gradient(linear, right top, left bottom, from(#582c7e), to(#6276cd)); /* для Webkit браузеров */
+	background: -moz-linear-gradient(to right left, #582c7e, #5a3b8e, #616bc0, #6276cd); /* для Firefox */
+    background-image: -o-linear-gradient(right,  #582c7e,  #8659ad); /* для Opera 11 */
+}
+
+#donate {
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    color: #ffffff;
+    padding: 16px 45px;
+    margin-left: 49px;
+    border-radius: 30px;
+    box-shadow: 0px 7px 12px rgba(68, 164, 228, 1);
+    background: -webkit-gradient(linear, right top, left bottom, from(#5e7bea), to(#36bae1)); /* для Webkit браузеров */
+	background: -moz-linear-gradient(to right left, #5e7bea, #5e7bea, #36bae1, #36bae1); /* для Firefox */
+    background-image: -o-linear-gradient(right,  #5e7bea,  #36bae1); /* для Opera 11 */
+}
+
+#cloud:hover {
+    box-shadow: 0px 7px 12px rgba(99, 98, 140, 1);
+    background: -webkit-gradient(linear, right top, left bottom, from(#8443bd), to(#788ef3)); /* для Webkit браузеров */
+	background: -moz-linear-gradient(to right left, #8443bd, #8443bd, #788ef3, #788ef3); /* для Firefox */
+    background-image: -o-linear-gradient(right,  #8443bd,  #788ef3);
+}
+
+#cloud:active {
+    box-shadow: 0px 7px 12px rgb(35, 34, 92);
+    background: -webkit-gradient(linear, right top, left bottom, from(#221131), to(#374375)); /* для Webkit браузеров */
+	background: -moz-linear-gradient(to right left, #221131, #221131, #374375, #374375); /* для Firefox */
+    background-image: -o-linear-gradient(right,  #221131,  #374375);
+}
+
+#donate:hover {
+    box-shadow: 0px 7px 12px rgba(68, 164, 228, 1);
+    background: -webkit-gradient(linear, right top, left bottom, from(#758ef3), to(#5ad2f7)); /* для Webkit браузеров */
+	background: -moz-linear-gradient(to right left, #758ef3, #758ef3, #5ad2f7, #5ad2f7); /* для Firefox */
+    background-image: -o-linear-gradient(right,  #758ef3,  #5ad2f7);
+}
+
+#donate:active {
+    box-shadow: 0px 7px 12px rgb(33, 83, 116);
+    background: -webkit-gradient(linear, right top, left bottom, from(#162046), to(#194755)); /* для Webkit браузеров */
+	background: -moz-linear-gradient(to right left, #162046, #162046, #194755, #194755); /* для Firefox */
+    background-image: -o-linear-gradient(right,  #162046,  #194755);
+}
+
+.menu li a:hover {
+    color: #298caa;
+}
+
+.links img:hover {
+    box-shadow: 0px 7px 12px rgb(5, 16, 24);
+}
+.links img:active {
+    box-shadow: none;
+}
+
+#gplus:hover, #facebook:hover, #twitter:hover {
+    color: #298caa;
+}
+#gplus:active, #facebook:active, #twitter:active {
+    color: #051114;
+}
+
+.language li a:active {
+    color: #eec34c;
+    border-bottom: 2px solid #eec34c;
+}
+
+/* ////////////////////////////////////// - FOOTER - ////////////////////////////////////// */
+
+.display-type {
+    display: flex;
+}
+
+.footer-content {
+    width: 77.7%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-h-line {
+    width: 100%;
+    height: 2px;
+    background-color: #b9b9b9;
+}
+
+.helpers {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.helpers p {
+    font-size: 14px;
+    letter-spacing: 0px;
+    line-height: 56px;
+    color: #7a7a7a;
+    font-family: "Titillium Web";
+    font-weight: 400;
+    padding-right: 23px;
+    margin: 0;
+}
+
+.helpers img {
+    padding: 1px 8px;
+}
+
+.footer-v-line {
+    width: 1px;
+    background-color: #959393;
+    height: 443px;
+}
+
+.footer-lists {
+    display: flex;   
+    justify-content: space-between; 
+}
+
+.footer-left {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-left-stage2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 140px 0 0 221px;
+    margin-right: -12px;
+}
+
+.neutron {
+    list-style-type: none;
+}
+
+.neutron li, a {
+    font-size: 14px;
+    letter-spacing: 0px;
+    line-height: 23px;
+    color: #5c5c5c;
+    font-family: "Titillium Web";
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.bld {
+    font-weight: 900;
+}
+
+.neutron li:nth-child(4) {
+    padding-top: 22px;
+}
+
+.neutron li:nth-child(5) a {
+         border-bottom: 1px solid #d6d6d6;
+}
+
+.company li, a {
+    font-size: 14px;
+    letter-spacing: 0px;
+    line-height: 23px;
+    color: #5c5c5c;
+    font-family: "Titillium Web";
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.company2 li, a {
+    font-size: 14px;
+    letter-spacing: 0px;
+    line-height: 23px;
+    color: #5c5c5c;
+    font-family: "Titillium Web";
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.company ul, .company2 ul {
+    direction: rtl;
+    float: left; 
+    padding-right: 16px;
+    width: 120px;
+}
+
+.company ul li:first-child, .company2 ul li:first-child {
+    font-weight: 900;
+    padding-bottom: 25px;
+    list-style-type: none;
+    margin-right: -15px;
+}
+
+.company2 {
+    display: none;
+}
+
+.footer-v-line2 {
+    width: 1px;
+    height: 317px;
+    background-color: #b9b9b9;
+    margin-top: 158px;
+    margin-right: 52px;
+}
+
+.wrapp-for-list {
+    padding-top: 140px;
+    padding-right: 27px;
+}
+
+.sites ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 42px 0 0 202px;
+}
+
+.sites li {
+    display: inline;
+}
+
+.sites li a {
+    font-size: 12px;
+    letter-spacing: 0px;
+    color: #959595;
+    font-family: "Titillium Web";
+    font-weight: 400;
+    padding-right: 10px;
+    text-decoration: none;
+}
+
+.sites li span {
+    font-size: 14px;
+    letter-spacing: 0px;
+    line-height: 56px;
+    color: #959595;
+    font-family: "Titillium Web";
+    font-weight: 400;
+    padding-right: 10px;
+}
+
+.right {
+    font-size: 12px;
+    letter-spacing: 0px;
+    line-height: 23px;
+    color: #5c5c5c;
+    font-family: "Titillium Web";
+    font-weight: 400;
+    margin: -10px 0 0 202px;
+}
+
+.footer-left-stage1 {
+    display: flex;
+    flex-direction: column;
+}
+
+#hide-footer {
+    display: none;
+}
+
+.footer-content-media-550 {
+    display: none;
+}
+
+.footer-media-550 {
+    display: none;
+}
+
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ - FOOTER - \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+/*{{{{{{{{{{{{{{{{OTHER}}}}}}}}}}}}}}}}}}}}*/
+
+#create:hover, .login ul li:nth-child(2) a:hover, #bt-apple:hover, #bt-google-play:hover {
+    box-shadow: 0px 7px 12px rgba(122, 144, 203, 1);
+    background: -webkit-gradient(linear, left top, left bottom, from(#9242d8), to(#6b85f5)); /* для Webkit браузеров */
+	background: -moz-linear-gradient(to bottom right, #9242d8, #9242d8, #6b85f5, #6b85f5); /* для Firefox */
+    background-image: -o-linear-gradient(top,  #9242d8,  #6b85f5); /* для Opera 11 */
+}
+
+#create:active, .login ul li:nth-child(2) a:active, #bt-apple:active, #bt-google-play:active {
+    box-shadow: 0px 7px 12px rgb(53, 67, 107);
+    background: -webkit-gradient(linear, left top, left bottom, from(#200f30), to(#1c2650)); /* для Webkit браузеров */
+	background: -moz-linear-gradient(to bottom right, #200f30, #200f30, #1c2650, #1c2650); /* для Firefox */
+    background-image: -o-linear-gradient(top,  #200f30,  #1c2650); /* для Opera 11 */
+}    
+
+/* ................................. MEDIA max-width: 980px............................... */
+
+@media screen and (max-device-width: 800px) {
+    .common {
+        background-color: #000000;
+        width: 100%;
+        background: url(../assets/img/8bit.jpg);
+    }
+    .header {
+        background: url(../assets/img/8bit.jpg);
+        padding: 0;
+        align-items: center;
+    }
+
+    .login ul li:nth-child(2) a {
+        padding: 9px 10px;
+    }
+
+    .section-about-security {
+        background: url(../assets/img/8bit2.jpg);
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        width: auto\9; /* ie8 */
+     }
+
+    .vertical-line, .vertical-line2, .horizontal-line, .footer-v-line, .footer-v-line2 {display: none}
+
+     .footer-content {
+         width: 100%;
+     }
+
+     .footer-left-stage2 {
+         padding: 0;
+     }
+
+     .right {
+         padding: 0;
+     }
+
+    .login {
+        padding-top: 20px;
+    }
+
+     .login li a {
+         color: #0fe421;
+     }
+
+     .menu li a {
+         color: #d6da1c;
+     }
+
+     .create-account-block h1 {   
+        width: auto;
+        font-size: 60px;      
+        padding: 15px;
+        color: #08ff08;
+        font-weight: 900;
+        text-shadow: 0 8px 20px rgb(194, 8, 110);
+     }
+     .create-account-block h3 {
+        color: #06ffff;
+        width: auto;
+     }
+     
+    .right-sidebar {
+        width: auto;
+    }
+
+    .language {
+        display: none;
+    }    
+    
+    .language-media ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }  
+    
+    .language-media li {
+        display: inline;
+    }
+    
+    .language-media li a {    
+        font-size: 14px;
+        letter-spacing: 0px;
+        color: #54d9e2;
+        font-family: "Titillium Web";
+        font-weight: 400;
+        padding-right: 10px;
+        text-decoration: none;
+    }
+    
+    .language-media li span {
+        font-size: 14px;
+        letter-spacing: 0px;
+        line-height: 56px;
+        color: #959595;
+        font-family: "Titillium Web";
+        font-weight: 400;
+        padding-right: 10px;
+    }
+    
+    .language-media li a:hover {
+        color: #959595;
+        font-weight: 900;
+    }
+
+    .menu {
+        display: none;
+    } 
+
+    .menu-media {
+        display: flex;
+    }
+    .menu-media li a {
+        color: #06ffff;
+    }
+
+    #create, #bt-apple, #bt-google-play {
+        box-shadow: 0px 4px 12px rgba(122, 144, 203, 1);
+    }
+
+    #create, #bt-apple, #bt-google-play, #cloud, #donate, .login ul li:nth-child(2) a {
+        color: #ffffff;
+        background: -webkit-gradient(linear, left top, left bottom, from(#07010a), to(#280638));
+        background: -moz-linear-gradient(to bottom right, #07010a, #07010a, #280638, #280638);
+        background-image: -o-linear-gradient(top, #07010a, #280638);
+    }
+    
+    #gplus, #facebook, #twitter {
+        left: 90%;
+        color: #0fe421;
+    }
+
+    #gplus {
+        top: 47%;
+    }
+
+    #facebook {
+        top: 57%;
+    }
+
+    #twitter {
+        top: 67%;
+    }
+
+    .section-about-security {
+        padding-bottom: 20px;
+    }
+    
+    .about-support h1, p {
+        text-align: center;
+    }
+
+    .left-section-bottom h1 {
+        color: #0fe421;
+    }
+
+    .about-support h1 {
+        color: #0fe421;
+    }
+
+    .about-support p {
+        color: #54d9e2;
+    }
+
+    .description {
+        color: #06ffff;
+    }
+
+    .swiss, .double, .email {
+        padding-top: 50px;
+    }
+
+    .swiss, .double {
+        padding-bottom: 50px;
+    }
+
+    .swiss-text-h, .double-text-h, .email-text-h {
+        background: none;
+        padding: 0;
+        text-align: center;
+    }
+
+    .swiss-text-h h1, .double-text-h h1, .email-text-h h1 {
+        padding-bottom: 25px;
+        color: #0fe421;
+    }
+
+    .swiss-text-h p, .double-text-h p, .email-text-h p {
+        line-height: 20px;
+        color: #06ffff;
+    }
+
+    .left-section-bottom p {
+        color: #06ffff;
+    }
+
+    .journals, .helpers img {
+        padding: 0;
+    }
+
+    .purchase {
+        background: none;
+    }
+
+    .herald-words {
+        background: none;
+        color: #08efff;
+        margin: 3% 0 0px 0%;
+        text-shadow: 0 0 25px rgb(0, 0, 0);
+    }
+
+    .boston-herald {
+        padding: 0 0 0 37px;
+        color: #0fe421;
+    }
+
+    .left-section-bottom h1 {
+        line-height: 55px;
+        padding-left: 27px;
+    }
+
+    .stores h1, .stores p {
+        color: #08efff;
+        font-weight: 900;
+        text-shadow: 0 0 19px rgb(233, 43, 147);
+    }
+
+    #cloud {
+        margin: 0;
+    }
+
+    .footer-lists {
+        justify-content: center;
+    }
+
+    .footer-left {
+        width: auto;
+    }
+
+    #nmail {
+        margin-right: 50px;
+    }
+
+    .neutron {
+        padding-left: 0px;
+        margin-left: 0px;
+    } 
+
+    .neutron li {
+        color: #0fe421;
+    }
+
+    .neutron li a {
+        color: #06ffff;
+    }
+
+    .sites ul, .right {
+        padding: 0px;
+        margin: 0px;
+    } 
+
+    .wrapp-for-list {
+        display: none;
+    }
+
+    .footer-left-stage2 {
+        padding: 0;
+        margin: 0;
+    }
+
+    .company2 {
+        display: block;
+    }
+
+    .company ul, .company2 ul {
+        direction: ltr;
+        float: none;
+        width: 120px;
+    }
+
+    .company ul li:first-child, .company2 ul li:first-child {
+        font-weight: 900;
+        padding-bottom: 25px;
+        list-style-type: circle;
+        margin-right: 0;
+        color: #0fe421;
+    }
+
+    .company ul li, .company2 ul li {
+        color: #06ffff;
+    }
+
+    .company ul li a, .company2 ul li a {
+        color: #54d9e2;
+    }
+
+    .neutron, .company, .company2 {
+        padding-top: 20px;
+    }
+
+    .footer-left-stage1 {
+        display: none;
+    }
+
+    .footer-media {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sites {
+        margin: -20px;
+    }
+
+    .sites ul li, .sites ul li a {
+        color: #06ffff;
+    }
+
+    .right {
+        color: #0fe421;
+    }
+
+    #hide-footer {
+        display: block;
+    }
+
+}
+
+/* ................................. MEDIA max-width: 670px ............................... */
+
+@media screen and (max-device-width: 670px) {
+    .company ul, .company2 ul {
+        width: auto;
+    }
+
+    .header {
+        background: url(../assets/img/8bit.jpg);
+    }
+
+    .left-section {
+        background: url(../assets/img/8bit2.jpg); 
+    }
+
+    .common {
+        background: url(../assets/img/8bit.jpg);
+    }
+
+    .herald-words {
+        width: auto;
+        padding: 0 10px;
+        text-align: center;
+    }
+
+    .wrapp-left-section {
+        width: 100%;
+    }
+
+    .right-section {
+        display: none;
+    }
+
+    #media-right-section-670 {
+        display: block;
+    }
+
+    .swiss, .double, #media-right-section-670 {
+        width: 33%;
+    } 
+
+    .swiss-text {
+        width: auto;
+    }
+
+    .left-section-bottom {
+        justify-content: center;
+    }
+
+    .sites {
+        padding-left: 20px;
+    }
+
+    .purchase {
+        background: none;
+    }
+
+    #create, #bt-apple, #bt-google-play, #cloud, #donate, .login ul li:nth-child(2) a {
+        color: #ffffff;
+        background: -webkit-gradient(linear, left top, left bottom, from(#07010a), to(#280638));
+        background: -moz-linear-gradient(to bottom right, #07010a, #07010a, #280638, #280638);
+        background-image: -o-linear-gradient(top, #07010a, #280638);
+    }
+}    
+
+/* ................................. MEDIA max-width: 550px ............................... */
+
+    @media screen and (max-device-width: 550px) {
+
+    .header-navigation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }        
+
+    .left-sidebar {
+        width: auto;
+    }
+
+    #nmail {
+        margin-right: 0;
+    }
+
+    .login ul {
+        padding-left: 0;
+    }
+
+    #nmail {
+        padding-top: 20px;
+    }    
+
+    .create-account-block h1 {
+        font-size: 10vw;
+    }
+
+    .create-account-block h3 {
+        font-size: 8vw;
+    }
+
+    .about-support p {
+        font-size: 8vw;
+        line-height: 8vw;
+    }
+
+    #gplus {
+        top: 6%;
+    }
+
+    #facebook {
+        top: 12%;
+    }
+
+    #twitter {
+        top: 18%;
+    }
+
+    .buttons, .btns {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    #create, #bt-apple, #bt-google-play, #cloud, #donate {
+        padding: 17px 5px;
+    }
+
+    #create, #bt-apple, #bt-google-play, #cloud, #donate {
+        display: flex;
+        justify-content: center;
+        margin: 0 0 10px 0;
+        width: 80%;
+    }
+
+    .boston-herald {
+        padding: 0;
+    }
+
+    .left-section-bottom h1 {
+        font-size: 10vw;
+    }
+
+    .links {
+        padding: 32px 0 0 0px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .purchase {
+        background: none;
+        padding-bottom: 25px;
+    }
+
+    .about-support {
+        padding-top: 0;
+    } 
+
+    .stores h1, .stores p {
+        color: #06ffff;
+    }
+
+    .about-support h1 {
+        font-size: 9vw;
+        line-height: 9vw;
+    }
+
+    .wrapp-purchase-and-support {
+        padding-bottom: 5px;
+    }
+
+    .helpers p {
+        line-height: 20px;
+    }
+
+    .left-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #gplus, #facebook, #twitter {
+        left: -2px;
+    }
+
+    .swiss, .double, #media-right-section-670 {
+        width: auto;
+        padding: 20px 0 0;
+    }
+
+    .swiss-text, .double-text, .email-text {
+        width: auto;
+        padding: 0 10px;
+    }
+
+    .footer-content-media-550 {
+        display: block;
+    }        
+
+    .footer-content {
+        display: none;
+    }
+
+    .footer-h-line {
+        display: none;
+    }
+
+    .footer-left-stage2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .neutron, .company, .company2 {
+        padding: 0;
+    }
+
+    .company ul li, .company2 ul li {
+        display: inline;
+    }
+
+    .footer-media {
+        display: none;
+    }
+
+    .footer-media-550 {
+        display: block;
+    }
+
+    .sites {
+        margin: 0;
+    }
+
+    #hide-footer {
+        display: flex;
+        justify-content: center;
+    }
+
+    .company ul, .company2 ul {
+        margin: 10px 0 0;
+    }
+
+}
